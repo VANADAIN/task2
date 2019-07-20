@@ -1,8 +1,10 @@
-doctype html
-html(lang="ru-RU")
-    head
-        link(rel="stylesheet", href="")
-        title
-            block tit;e
-    body 
-        block content
+extends base
+
+block links
+    link(rel="stylesheet", href="./src/styles/index.css")
+
+block title
+    | Form Elements
+
+block content 
+    include modules/bodypattern
