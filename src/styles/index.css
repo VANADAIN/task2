@@ -1,9 +1,0 @@
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 126px;
-  margin: 140px 141px 0px 141px;
-}
-/*# sourceMappingURL=index.css.map */

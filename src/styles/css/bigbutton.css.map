@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "colors.sass"
+        "../buttons/bigbutton.sass"
     ],
     "names": [],
-    "file": "colors.css"
+    "file": "bigbutton.css"
 }
