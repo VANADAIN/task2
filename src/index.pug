@@ -1,32 +1,33 @@
 extends base
 
 block links
-    link(rel="stylesheet", href="./styles/css/index.css")
+    link(rel="stylesheet", href="./css/index.css")
 
 block title
     | Form Elements
 
-block content 
-    div.logo
-        div.logo-part-one
-            img(src="./src/img/vector1.png")
-        div.logo-part-two
-    div.wrapper
-        div.grid
-            div.grid-item
-                div.grid-column-one
-                    div.titles
-                        div.title-one
-                            h3.title-small text field
-                        div.title-two
-                            h3.title-faded default
-                    input(type="text" placeholder="Email").input
-                div.grid-column-two
-                    h3.title-small checkbox buttons
-                div.grid-column-three
-                    h3.title-small range slider
-                    include modules/titles
-                    +titles(первый, второй)
+block content
+    include modules/input
+    include modules/titles
+    include modules/logo
+    
+
+    div.grid
+        div.grid-item
+            div.grid-column-one
+                div.titles
+                    div.title-one
+                        h3.title-small text field
+                    div.title-two
+                        h3.title-faded default
+                +input('text', 'Email')
+                
+            div.grid-column-two
+                h3.title-small checkbox buttons
+            div.grid-column-three
+                h3.title-small range slider
+                
+                
                 
                     
                     

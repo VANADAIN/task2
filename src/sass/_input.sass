@@ -13,12 +13,17 @@
     font-weight: normal
     font-size: 14px
     line-height: 24px
-    color: $dark25
+    color: $dark75
+    &:focus
+        border: 1px solid rgba(31, 32, 65, 0.5)
+        outline: 0
+        outline-offset: 0
     &::-webkit-input-placeholder
         opacity: 1 
         transition: opacity 0.3s ease
         height: 18px
         color: $dark25
+        
     &::-moz-placeholder                
         opacity: 1 
         transition: opacity 0.3s ease
@@ -45,16 +50,16 @@
         opacity: 0 
         transition: opacity 0.3s ease
         height: 18px
-        color: $dark25
+        color: $dark75
 
     &:focus:-moz-placeholder           
         opacity: 0 
         transition: opacity 0.3s ease
         height: 18px
-        color: $dark25
+        color: $dark75
 
     &:focus:-ms-input-placeholder     
         opacity: 0 
         transition: opacity 0.3s ease
         height: 18px
-        color: $dark25
+        color: $dark75

@@ -1,8 +1,7 @@
 mixin titles(name, title)
-    div(class="titles")
-        div(class="title-one")
+    .titles
+        .title-one
             h3.title-small= name
-        div(class="title-two")
-            h3.title-small= title
+        .title-two
+            h3.title-faded= title
 
-+titles(первый, второй)
