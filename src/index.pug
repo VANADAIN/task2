@@ -7,20 +7,18 @@ block title
     | Form Elements
 
 block content
-    include modules/input
-    include modules/titles
-    include modules/logo
-    
+    include modules/input/input
+    include modules/titles/titles
+    include modules/logo/logo
+    include modules/dropdown/dropdownguests
 
     div.grid
         div.grid-item
             div.grid-column-one
-                div.titles
-                    div.title-one
-                        h3.title-small text field
-                    div.title-two
-                        h3.title-faded default
+                +titles("text field", "default")
                 +input('text', 'Email')
+                +titles("dropdown", "default")
+                +dropdownguests()
                 
             div.grid-column-two
                 h3.title-small checkbox buttons
@@ -34,4 +32,8 @@ block content
                     
             div.grid-item
             div.grid-item
-        
+    script(src="https://code.jquery.com/jquery-3.4.1.js")
+    script(src="./js/main.js")
+    
+
+

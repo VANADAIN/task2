@@ -6,21 +6,46 @@
     </title>
   </head>
   <body> 
-    <div class="logo"><img src="./img/vector3.svg"></div>
-    <div class="logo-part-one"><img src="./img/vector1.svg"></div>
-    <div class="logo-part-two"><img src="./img/vector2.svg"></div>
+    <div class="logo">
+      <div class="logo-part-three"><img src="./img/vector3.svg"></div>
+      <div class="logo-part-one"><img src="./img/vector1.svg"></div>
+      <div class="logo-part-two"><img src="./img/vector2.svg"></div>
+    </div>
     <div class="grid">
       <div class="grid-item">
         <div class="grid-column-one">
-          <div class="titles">
-            <div class="title-one">
-              <h3 class="title-small">text field</h3>
-            </div>
-            <div class="title-two">
-              <h3 class="title-faded">default</h3>
-            </div>
-          </div>
+              <div class="titles">
+                <div class="title-one">
+                  <h3 class="title-small">text field</h3>
+                </div>
+                <div class="title-two">
+                  <h3 class="title-faded">default</h3>
+                </div>
+              </div>
               <input class="input" type="text" placeholder="Email">
+              <div class="titles">
+                <div class="title-one">
+                  <h3 class="title-small">dropdown</h3>
+                </div>
+                <div class="title-two">
+                  <h3 class="title-faded">default</h3>
+                </div>
+              </div>
+              <div class="dropdown-guests">
+                <ul class="dropdown-guests-list">Сколько гостей
+                  <li class="dropdown-guests-list__hide"><a href="#">1 гость</a></li>
+                  <li class="dropdown-guests-list__hide"> <a href="#">2 гостя</a></li>
+                  <li class="dropdown-guests-list__hide"> <a href="#">3 гостя</a></li>
+                  <li class="dropdown-guests-list__hide"> <a href="#">4 гостя</a></li>
+                  <li class="dropdown-guests-list__hide"> <a href="#">5 гостей</a></li>
+                  <li class="dropdown-guests-list__hide"> <a href="#">6 гостей</a></li>
+                  <li class="dropdown-guests-list__hide"> <a href="#">7 гостей</a></li>
+                  <li class="dropdown-guests-list__hide"> <a href="#">8 гостей</a></li>
+                  <li class="dropdown-guests-list__hide"> <a href="#">9 гостей</a></li>
+                  <li class="dropdown-guests-list__hide"> <a href="#">10 гостей</a></li>
+                </ul>
+                <button class="dropdown-guests-button"><img src="./img/expandmore.svg"></button>
+              </div>
         </div>
         <div class="grid-column-two">
           <h3 class="title-small">checkbox buttons</h3>
@@ -32,5 +57,7 @@
         <div class="grid-item"></div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
