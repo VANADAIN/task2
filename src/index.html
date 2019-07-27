@@ -22,7 +22,9 @@
                   <h3 class="title-faded">default</h3>
                 </div>
               </div>
-              <input class="input" type="text" placeholder="Email">
+              <div class="input-box">
+                <input class="input" type="text" placeholder="Email" id="">
+              </div>
               <div class="titles">
                 <div class="title-one">
                   <h3 class="title-small">dropdown</h3>
@@ -32,19 +34,33 @@
                 </div>
               </div>
               <div class="dropdown-guests">
-                <ul class="dropdown-guests-list">Сколько гостей
-                  <li class="dropdown-guests-list__hide"><a href="#">1 гость</a></li>
-                  <li class="dropdown-guests-list__hide"> <a href="#">2 гостя</a></li>
-                  <li class="dropdown-guests-list__hide"> <a href="#">3 гостя</a></li>
-                  <li class="dropdown-guests-list__hide"> <a href="#">4 гостя</a></li>
-                  <li class="dropdown-guests-list__hide"> <a href="#">5 гостей</a></li>
-                  <li class="dropdown-guests-list__hide"> <a href="#">6 гостей</a></li>
-                  <li class="dropdown-guests-list__hide"> <a href="#">7 гостей</a></li>
-                  <li class="dropdown-guests-list__hide"> <a href="#">8 гостей</a></li>
-                  <li class="dropdown-guests-list__hide"> <a href="#">9 гостей</a></li>
-                  <li class="dropdown-guests-list__hide"> <a href="#">10 гостей</a></li>
-                </ul>
-                <button class="dropdown-guests-button"><img src="./img/expandmore.svg"></button>
+                <select class="dropdown-guests-list">
+                  <option data-display="Сколько гостей">Сколько гостей</option>
+                  <option value="1">1 гость</option>
+                  <option value="2">2 гостя</option>
+                  <option value="3">3 гостя</option>
+                  <option value="4">4 гостя</option>
+                  <option value="5">5 гостей</option>
+                  <option value="6">6 гостей</option>
+                  <option value="7">7 гостей</option>
+                  <option value="8">8 гостей</option>
+                  <option value="9">9 гостей</option>
+                  <option value="10">10 гостей</option>
+                </select>
+              </div><br>
+              <div class="titles">
+                <div class="title-one">
+                  <h3 class="title-small">masked text field</h3>
+                </div>
+                <div class="title-two">
+                  <h3 class="title-faded">default</h3>
+                </div>
+              </div>
+              <div class="input-box">
+                <input class="input" type="text" placeholder="ДД.ММ.ГГГГ" id="date">
+              </div>
+              <div class="input-box">
+                <input class="input" type="text" placeholder="ДД.ММ.ГГГГ" id="datetimepicker">
               </div>
         </div>
         <div class="grid-column-two">
@@ -57,7 +73,9 @@
         <div class="grid-item"></div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery/jquery.nice-select.min.js"></script>
+    <script src="./js/jquery/jquery.maskedinput.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

@@ -1,28 +1,19 @@
 
 mixin dropdownguests()
     .dropdown-guests
-        ul.dropdown-guests-list Сколько гостей
-            li.dropdown-guests-list__hide
-                a(href="#") 1 гость
-            li.dropdown-guests-list__hide 
-                a(href="#") 2 гостя
-            li.dropdown-guests-list__hide 
-                a(href="#") 3 гостя
-            li.dropdown-guests-list__hide 
-                a(href="#") 4 гостя
-            li.dropdown-guests-list__hide 
-                a(href="#") 5 гостей
-            li.dropdown-guests-list__hide 
-                a(href="#") 6 гостей
-            li.dropdown-guests-list__hide 
-                a(href="#") 7 гостей
-            li.dropdown-guests-list__hide 
-                a(href="#") 8 гостей
-            li.dropdown-guests-list__hide 
-                a(href="#") 9 гостей
-            li.dropdown-guests-list__hide 
-                a(href="#") 10 гостей
-        button.dropdown-guests-button
-            img(src="./img/expandmore.svg")
+        select.dropdown-guests-list
+            option(data-display="Сколько гостей") Сколько гостей
+            option(value="1") 1 гость
+            option(value="2") 2 гостя
+            option(value="3") 3 гостя
+            option(value="4") 4 гостя
+            option(value="5") 5 гостей
+            option(value="6") 6 гостей
+            option(value="7") 7 гостей
+            option(value="8") 8 гостей
+            option(value="9") 9 гостей
+            option(value="10") 10 гостей
+        
+        
 
     

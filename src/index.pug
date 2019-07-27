@@ -1,8 +1,9 @@
 extends base
 
 block links
-    link(rel="stylesheet", href="./css/index.css")
+    link(rel="stylesheet" href="./css/index.css")
 
+    
 block title
     | Form Elements
 
@@ -16,24 +17,34 @@ block content
         div.grid-item
             div.grid-column-one
                 +titles("text field", "default")
-                +input('text', 'Email')
+                +input('text', 'Email', "")
                 +titles("dropdown", "default")
                 +dropdownguests()
+                br
+                +titles("masked text field", "default")
+                +input("text", "ДД.ММ.ГГГГ", "date")
+                +input("text", "ДД.ММ.ГГГГ", "datetimepicker")
                 
             div.grid-column-two
                 h3.title-small checkbox buttons
             div.grid-column-three
                 h3.title-small range slider
                 
-                
-                
-                    
-                    
-                    
+        
             div.grid-item
             div.grid-item
-    script(src="https://code.jquery.com/jquery-3.4.1.js")
-    script(src="./js/main.js")
+            
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+    script(src="./js/jquery/jquery.nice-select.min.js")
+    script(src="./js/jquery/jquery.maskedinput.min.js")
+
+    script(src="./js/index.js")
+    
+
+
+    
+    
+
     
 
 
