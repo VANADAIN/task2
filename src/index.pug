@@ -12,6 +12,7 @@ block content
     include modules/titles/titles
     include modules/logo/logo
     include modules/dropdown/dropdownguests
+    include modules/checkboxes/checkboxes
 
     div.grid
         div.grid-item
@@ -20,13 +21,15 @@ block content
                 +input('text', 'Email', "")
                 +titles("dropdown", "default")
                 +dropdownguests()
-                br
                 +titles("masked text field", "default")
                 +input("text", "ДД.ММ.ГГГГ", "date")
-                +input("text", "ДД.ММ.ГГГГ", "datetimepicker")
+                
+
                 
             div.grid-column-two
-                h3.title-small checkbox buttons
+                +titles("checkbox buttons", "")
+                +checkboxes("Можно курить", 
+                "Можно с питомцами", "Можно пригласить гостей (до 10 человек)")
             div.grid-column-three
                 h3.title-small range slider
                 

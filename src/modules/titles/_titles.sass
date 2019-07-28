@@ -1,8 +1,19 @@
 @import sass/colors
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:400,700&display=swap')
 
+.titles
+    display: grid
+    grid-template-columns: repeat(2, 160px)
+    height: 12px
+    margin-bottom: 7px
+    margin-top: 20px
 
 .title
+    &-one
+        height: 12px
+    &-two
+        height: 12px
+            
     font-style: normal
     font-weight: bold 700
     color: $dark100
@@ -10,11 +21,15 @@
         font-family: Quicksand, sans-serif
         font-size: 24px
         line-height: 30px
+        margin: 0px
+        padding: 0px
     &-small
         font-family: Montserrat, sans-serif
         font-size: 12px
         line-height: 15px
         text-transform: uppercase
+        margin: 0px
+        padding: 0px
     &-faded
         font-family: Montserrat, sans-serif
         font-size: 12px
@@ -23,6 +38,8 @@
         text-align: right
         text-transform: uppercase
         color: $dark50
+        margin: 0px
+        padding: 0px
 
         
         

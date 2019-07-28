@@ -20,19 +20,34 @@
   left: 30px;
   top: 29.90px; }
 
+.titles {
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+  height: 12px;
+  margin-bottom: 7px;
+  margin-top: 20px; }
+
 .title {
   font-style: normal;
   font-weight: bold 700;
   color: #1F2041; }
+  .title-one {
+    height: 12px; }
+  .title-two {
+    height: 12px; }
   .title-big {
     font-family: Quicksand, sans-serif;
     font-size: 24px;
-    line-height: 30px; }
+    line-height: 30px;
+    margin: 0px;
+    padding: 0px; }
   .title-small {
     font-family: Montserrat, sans-serif;
     font-size: 12px;
     line-height: 15px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px; }
   .title-faded {
     font-family: Montserrat, sans-serif;
     font-size: 12px;
@@ -40,7 +55,9 @@
     font-weight: normal;
     text-align: right;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    margin: 0px;
+    padding: 0px; }
 
 .input {
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -54,8 +71,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-bottom: 20px; }
+  color: rgba(31, 32, 65, 0.75); }
   .input:focus {
     border: 1px solid rgba(31, 32, 65, 0.5);
     outline: 0;
@@ -101,6 +117,53 @@
     height: 18px;
     color: rgba(31, 32, 65, 0.75); }
 
+.checkboxes-list {
+  padding-left: 0; }
+  .checkboxes-list-item {
+    list-style-type: none;
+    height: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center; }
+    .checkboxes-list-item__input {
+      -webkit-appearance: none;
+      margin: 0;
+      width: 20px;
+      height: 20px;
+      border: 1px solid rgba(31, 32, 65, 0.25);
+      background-color: #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 4px;
+      outline: none; }
+      .checkboxes-list-item__input:active, .checkboxes-list-item__input.nice-select.open {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        inset: 0px 1px 3px rgba(0, 0, 0, 0.1); }
+      .checkboxes-list-item__input:checked {
+        border: 1px solid #BC9CFF; }
+        .checkboxes-list-item__input:checked:active, .checkboxes-list-item__input.nice-select.open:checked {
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+          inset: 0px 1px 3px rgba(0, 0, 0, 0.1); }
+        .checkboxes-list-item__input:checked:after {
+          content: '';
+          position: relative;
+          left: 6px;
+          display: inline-block;
+          transform: rotate(45deg);
+          height: 6px;
+          width: 3px;
+          border-bottom: 2px solid  #BC9CFF;
+          border-right: 2px solid  #BC9CFF; }
+    .checkboxes-list-item__label {
+      width: 200px;
+      height: 18px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      color: rgba(31, 32, 65, 0.5);
+      padding-left: 10px; }
+
 .nice-select {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #fff;
@@ -115,6 +178,15 @@
   height: 44px;
   line-height: 42px;
   outline: none;
+  width: 320px;
+  height: 44px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  padding: 10px 0px 0px 15px;
   position: relative;
   text-align: left !important;
   transition: all 0.2s ease-in-out;
@@ -219,17 +291,6 @@
 .no-csspointerevents .nice-select.open .list {
   display: block; }
 
-.dropdown-guests-list {
-  width: 320px;
-  height: 44px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  padding: 10px 0px 0px 15px; }
-
 .grid {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
@@ -239,10 +300,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 126px; }
-
-.titles {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); }
 
 .grid-column-one {
   width: auto;

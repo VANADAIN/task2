@@ -1,0 +1,50 @@
+@import sass/colors
+    
+.checkboxes-list
+    padding-left: 0
+    &-item
+        list-style-type: none
+        height: 20px
+        margin-top: 10px
+        display: flex
+        align-items: center
+        &__input
+            -webkit-appearance: none
+            margin: 0
+            width: 20px
+            height: 20px
+            border: 1px solid $dark25
+            background-color: #FFFFFF
+            box-sizing: border-box
+            border-radius: 4px
+            outline: none
+            &:active
+                box-shadow: 0 1px 2px rgba(0,0,0,0.05)
+                inset: 0px 1px 3px rgba(0,0,0,0.1)
+            &:checked
+                border: 1px solid #BC9CFF
+                &:active
+                    box-shadow: 0 1px 2px rgba(0,0,0,0.05)
+                    inset: 0px 1px 3px rgba(0,0,0,0.1)
+                &:after
+                    content: ''
+                    position: relative
+                    left: 6px
+                    display: inline-block
+                    transform: rotate(45deg)
+                    height: 6px
+                    width: 3px
+                    border-bottom: 2px solid  #BC9CFF
+                    border-right: 2px solid  #BC9CFF
+                    
+        &__label
+            width: 200px
+            height: 18px
+            font-family: Montserrat
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+            color: $dark50
+            padding-left: 10px
+            

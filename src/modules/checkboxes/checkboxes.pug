@@ -1,0 +1,11 @@
+mixin checkboxes(...items)
+    .checkboxes
+        ul.checkboxes-list
+            each item in items
+                li.checkboxes-list-item
+                    input.checkboxes-list-item__input(type='checkbox')
+                    label.checkboxes-list-item__label= item
+                    
+        
+            
+
