@@ -24,7 +24,7 @@
   display: grid;
   grid-template-columns: repeat(2, 160px);
   height: 12px;
-  margin-bottom: 7px;
+  margin-bottom: 0px;
   margin-top: 20px; }
 
 .title {
@@ -66,6 +66,7 @@
   width: 320px;
   height: 44px;
   padding: 13px 0px 13px 15px;
+  margin-top: 5px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -117,52 +118,94 @@
     height: 18px;
     color: rgba(31, 32, 65, 0.75); }
 
-.checkboxes-list {
-  padding-left: 0; }
-  .checkboxes-list-item {
-    list-style-type: none;
-    height: 20px;
-    margin-top: 10px;
-    display: flex;
-    align-items: center; }
-    .checkboxes-list-item__input {
-      -webkit-appearance: none;
-      margin: 0;
-      width: 20px;
+.checkboxes {
+  height: 96px;
+  margin-top: 16px; }
+  .checkboxes-list {
+    padding-left: 0;
+    margin: 0; }
+    .checkboxes-list-item {
+      list-style-type: none;
       height: 20px;
-      border: 1px solid rgba(31, 32, 65, 0.25);
-      background-color: #FFFFFF;
-      box-sizing: border-box;
-      border-radius: 4px;
-      outline: none; }
-      .checkboxes-list-item__input:active, .checkboxes-list-item__input.nice-select.open {
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-        inset: 0px 1px 3px rgba(0, 0, 0, 0.1); }
-      .checkboxes-list-item__input:checked {
-        border: 1px solid #BC9CFF; }
-        .checkboxes-list-item__input:checked:active, .checkboxes-list-item__input.nice-select.open:checked {
+      margin-top: 10px;
+      display: flex;
+      align-items: center; }
+      .checkboxes-list-item__input {
+        -webkit-appearance: none;
+        margin: 0;
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        background-color: #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 4px;
+        outline: none; }
+        .checkboxes-list-item__input:active, .checkboxes-list-item__input.nice-select.open {
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
           inset: 0px 1px 3px rgba(0, 0, 0, 0.1); }
-        .checkboxes-list-item__input:checked:after {
-          content: '';
-          position: relative;
-          left: 6px;
-          display: inline-block;
-          transform: rotate(45deg);
-          height: 6px;
-          width: 3px;
-          border-bottom: 2px solid  #BC9CFF;
-          border-right: 2px solid  #BC9CFF; }
-    .checkboxes-list-item__label {
-      width: 200px;
-      height: 18px;
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 18px;
-      color: rgba(31, 32, 65, 0.5);
-      padding-left: 10px; }
+        .checkboxes-list-item__input:checked {
+          border: 1px solid #BC9CFF; }
+          .checkboxes-list-item__input:checked:active, .checkboxes-list-item__input.nice-select.open:checked {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            inset: 0px 1px 3px rgba(0, 0, 0, 0.1); }
+          .checkboxes-list-item__input:checked:after {
+            content: '';
+            position: relative;
+            left: 6px;
+            display: inline-block;
+            transform: rotate(45deg);
+            height: 6px;
+            width: 3px;
+            border-bottom: 2px solid  #BC9CFF;
+            border-right: 2px solid  #BC9CFF; }
+      .checkboxes-list-item__label {
+        width: 200px;
+        height: 18px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+        padding-left: 10px; }
+
+.radiobuttons {
+  margin-top: 16px; }
+  .radiobuttons-list {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .radiobuttons-list-item {
+      list-style-type: none;
+      height: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .radiobuttons-list-item__input {
+        -webkit-appearance: none;
+        outline: none;
+        margin: 0;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        position: relative;
+        box-shadow: inset 0 0 0 .2em white;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 50%;
+        transition: .4s;
+        color: #363945; }
+        .radiobuttons-list-item__input:hover {
+          background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+          box-shadow: inset 0 0 0 .3em white; }
+        .radiobuttons-list-item__input:checked {
+          background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+          box-shadow: inset 0 0 0 .2em white;
+          border: 1px solid linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+      .radiobuttons-list-item__label {
+        margin-left: 10px;
+        margin-right: 20px; }
 
 .nice-select {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -187,6 +230,7 @@
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   padding: 10px 0px 0px 15px;
+  margin-top: 5px;
   position: relative;
   text-align: left !important;
   transition: all 0.2s ease-in-out;
@@ -290,6 +334,9 @@
 
 .no-csspointerevents .nice-select.open .list {
   display: block; }
+
+#radio {
+  margin-top: 40px; }
 
 .grid {
   display: grid;

@@ -21,6 +21,7 @@
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   padding: 10px 0px 0px 15px;
+  margin-top: 5px;
   position: relative;
   text-align: left !important;
   transition: all 0.2s ease-in-out;

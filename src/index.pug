@@ -13,6 +13,7 @@ block content
     include modules/logo/logo
     include modules/dropdown/dropdownguests
     include modules/checkboxes/checkboxes
+    include modules/checkboxes/radiobuttons
 
     div.grid
         div.grid-item
@@ -30,6 +31,10 @@ block content
                 +titles("checkbox buttons", "")
                 +checkboxes("Можно курить", 
                 "Можно с питомцами", "Можно пригласить гостей (до 10 человек)")
+                div.titles(id="radio")
+                    .title-one
+                        h3.title-small Radio buttons
+                +radiobuttons("Мужчина", "Женщина")
             div.grid-column-three
                 h3.title-small range slider
                 
