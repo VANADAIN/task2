@@ -1,0 +1,20 @@
+extends base
+
+block links
+    link(rel="stylesheet" href="./css/colorsAndType.css")
+
+    
+block title
+    | Colors And Type
+
+block content
+    include modules/logo/logo
+    include modules/colors/colors
+    include modules/type/type
+
+    div.grid
+        div.grid-column
+            +colors()
+        div.grid-column
+            +type()
+            

@@ -1,0 +1,112 @@
+@import modules/logo/logo
+@import modules/colors/colors
+@import modules/media/colorsandtype
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:400,700&display=swap')
+    
+
+@mixin color($value)
+  background-color: $value
+  width: 70px
+  height: 70px  
+  border-radius: 6px
+
+@mixin color-desc()
+    color: $dark100
+    padding-top: 15px
+    margin-left: 40px
+
+.color
+    display: grid
+    grid-template-columns: 70px 200px
+    width: 170px
+    height: 70px
+    margin-bottom: 20px
+
+    &-sample
+        &-one
+            @include color($dark100)
+        &-two
+            @include color($dark75)
+        &-three
+            @include color($dark50)
+        &-four
+            @include color($dark25)
+        &-five 
+            @include color($dark5)
+        &-six
+            @include color($purple)
+        &-seven
+            @include color($green)
+    &-desc
+        &-one
+            @include color-desc()
+        &-two
+            @include color-desc()
+        &-three 
+            @include color-desc()
+        &-four
+            @include color-desc()
+        &-five
+            @include color-desc()
+        &-six
+            @include color-desc()
+            width: 80px
+        &-seven
+            @include color-desc()
+            width: 80px
+
+@mixin type($value, $secvalue)
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    text-align: right
+    color: $dark25
+    font-size: $value
+    line-height: $secvalue
+
+@mixin type-desc($value, $secvalue, $thvalue, $frvalue)
+    font-family: Quicksand
+    font-style: normal
+    font-weight: $value
+    color: $secvalue
+    font-size: $thvalue
+    line-height: $thvalue
+    padding-left: 30px
+    @media screen and (max-width: 576px)
+        padding-left: 10px
+        width: 320px
+    @media screen and (max-width: 408px)
+        width: 220px
+    
+
+
+.type
+    margin-bottom: 50px
+    display: grid
+    grid-template-columns: 35px 470px
+    
+    &-tag
+        &-one 
+            @include type(24px, 29px)
+        &-two
+            @include type(19px, 23px)
+        &-three
+            @include type(12px, 15px)
+
+        &-four
+            @include type(14px, 24px)
+    &-desc
+        @media screen and (max-width: 576px)
+            padding-left: 5px
+            
+        &-one
+            @include type-desc(bold, $dark100, 24px, 30px)
+        &-two
+            @include type-desc(bold, $dark100, 19px, 24px)
+        &-three
+            @include type-desc(bold, $dark100, 12px, 15px)
+            text-transform: uppercase
+        &-four
+            @include type-desc(normal, $dark75, 14px, 24px)
+
+        
