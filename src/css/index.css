@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:400,700&display=swap");
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Regular.ttf"); }
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("./fonts/Quicksand-Regular.ttf"); }
+
 .logo-part-one {
   position: absolute;
   width: 14.12px;
@@ -172,9 +181,17 @@
         color: rgba(31, 32, 65, 0.5);
         padding-left: 10px; }
 
+#text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px; }
+
 .radiobuttons {
   margin-top: 16px; }
   .radiobuttons-list {
+    width: 220px;
     padding-left: 0;
     margin: 0;
     display: flex;
@@ -184,7 +201,6 @@
       list-style-type: none;
       height: 20px;
       display: flex;
-      flex-direction: row;
       align-items: center; }
       .radiobuttons-list-item__input {
         -webkit-appearance: none;
@@ -206,15 +222,67 @@
           background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
           box-shadow: inset 0 0 0 .2em white;
           border: 1px solid linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
-      .radiobuttons-list-item__label {
+      .radiobuttons-list-item__label, .radiobuttons-list-item__label-active {
         margin-left: 10px;
         margin-right: 20px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
-        line-height: 18px;
+        line-height: 24px;
         color: rgba(31, 32, 65, 0.5); }
+        .radiobuttons-list-item__label-active {
+          color: rgba(31, 32, 65, 0.75); }
+
+.toggle-box {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  margin-top: 16px; }
+
+.toggle {
+  margin: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  outline: none;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color ease 0.5s; }
+  .toggle:before {
+    content: "";
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: 12px;
+    height: 12px;
+    background: rgba(31, 32, 65, 0.25);
+    left: 4px;
+    top: 3px;
+    border-radius: 50%;
+    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s; }
+  .toggle:checked {
+    background-color: #ffffff;
+    border: 1px solid #BC9CFF; }
+    .toggle:checked:before {
+      left: 23px;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+  .toggle-label {
+    width: 210px;
+    margin-left: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75); }
 
 .nice-select {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -345,6 +413,9 @@
   display: block; }
 
 #radio {
+  margin-top: 40px; }
+
+#toggle {
   margin-top: 40px; }
 
 .grid {

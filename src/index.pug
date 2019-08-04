@@ -14,6 +14,7 @@ block content
     include modules/dropdown/dropdownguests
     include modules/checkboxes/checkboxes
     include modules/radiobuttons/radiobuttons
+    include modules/toggle/toggle
 
     div.grid
         div.grid-item
@@ -33,6 +34,12 @@ block content
                     .title-one
                         h3.title-small Radio buttons
                 +radiobuttons("Мужчина", "Женщина")
+                div.titles(id="toggle")
+                    .title-one
+                        h3.title-small toggle
+                +toggle("Получать спецпредложения")
+
+
             div.grid-column-three
                 h3.title-small range slider
                 

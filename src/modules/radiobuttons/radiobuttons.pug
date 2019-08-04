@@ -2,8 +2,12 @@ mixin radiobuttons(nameone, nametwo)
     .radiobuttons
         ul.radiobuttons-list
             li.radiobuttons-list-item
-                input.radiobuttons-list-item__input(type='radio' name="sex")
-                label.radiobuttons-list-item__label= nameone
+                input.radiobuttons-list-item__input(type='radio' name="sex" 
+                value="male")
+                label.radiobuttons-list-item__label(for="male")= nameone
+                
             li.radiobuttons-list-item
-                input.radiobuttons-list-item__input(type='radio' name="sex")
-                label.radiobuttons-list-item__label= nametwo
+                input.radiobuttons-list-item__input(type='radio' name="sex" 
+                value="female")
+                label.radiobuttons-list-item__label(for="female")= nametwo
+                

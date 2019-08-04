@@ -7,9 +7,9 @@
   </head>
   <body> 
     <div class="logo">
-      <div class="logo-part-three"><img src="./img/vector3.svg"></div>
       <div class="logo-part-one"><img src="./img/vector1.svg"></div>
       <div class="logo-part-two"><img src="./img/vector2.svg"></div>
+      <div class="logo-part-three"><img src="./img/vector3.svg"></div>
     </div>
     <div class="grid">
       <div class="grid-item">
@@ -93,14 +93,23 @@
               <div class="radiobuttons">
                 <ul class="radiobuttons-list">
                   <li class="radiobuttons-list-item">
-                    <input class="radiobuttons-list-item__input" type="radio" name="sex">
-                    <label class="radiobuttons-list-item__label">Мужчина</label>
+                    <input class="radiobuttons-list-item__input" type="radio" name="sex" value="male">
+                    <label class="radiobuttons-list-item__label" for="male">Мужчина</label>
                   </li>
                   <li class="radiobuttons-list-item">
-                    <input class="radiobuttons-list-item__input" type="radio" name="sex">
-                    <label class="radiobuttons-list-item__label">Женщина</label>
+                    <input class="radiobuttons-list-item__input" type="radio" name="sex" value="female">
+                    <label class="radiobuttons-list-item__label" for="female">Женщина</label>
                   </li>
                 </ul>
+              </div>
+          <div class="titles" id="toggle">
+            <div class="title-one">
+              <h3 class="title-small">toggle</h3>
+            </div>
+          </div>
+              <div class="toggle-box">
+                <input class="toggle" type="checkbox">
+                <label class="toggle-label">Получать спецпредложения</label>
               </div>
         </div>
         <div class="grid-column-three">
