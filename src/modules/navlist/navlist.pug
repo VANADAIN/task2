@@ -1,0 +1,27 @@
+mixin navlist(id)
+    .navlist-box(id=id)
+        ul.navlist
+            li(class="navlist-item" )
+                a(href="#" class="navlist-item-text" id="home")  Home
+            li.navlist-item 
+                a(href="#" class="navlist-item-text")  About Us
+            li.navlist-item(id="special") 
+                a(href="#" class="navlist-item-text")  Services
+                div.services-dropdown
+                    
+                    button.services-btn
+                        img(src="./img/expandmore_small.svg" id="services")
+                    .services-dropdown-content
+                        a.services-dropdown-content-items(href="#") Services
+                        a.services-dropdown-content-items(href="#") Services
+                        a.services-dropdown-content-items(href="#") Services
+
+            li.navlist-item 
+                a(href="#" class="navlist-item-text")  Careers
+            li.navlist-item 
+                a(href="#" class="navlist-item-text")  News
+            li.navlist-item 
+                a(href="#" class="navlist-item-text") Documentation
+            
+
+            

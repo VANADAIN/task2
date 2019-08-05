@@ -9,9 +9,31 @@ block title
 
 block content
     include modules/logo/logo
+    include modules/buttons/button
     
     div.grid
-        div.grid-column-one
+        
+        div.grid-row-one
+            nav
+                .logo-complete
+                    include modules/logo/coloredlogo
+                    include modules/logo/toxin
+                include modules/navlist/navlist
+                +navlist("one")
+                .buttons
+                    +button("button-login", "login")
+                    +button("button-register", "register")
 
-        div.grid-column-two
+
+
+        div.grid-row-one
+            nav
+                .logo-complete
+                    include modules/logo/coloredlogo
+                    include modules/logo/toxin
+                include modules/navlist/navlist_2
+                +navlist2("two")
+                
+
+        div.grid-row-two
             
