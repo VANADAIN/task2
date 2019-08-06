@@ -6,6 +6,10 @@
 @import modules/navlist/navlist
 @import modules/buttons/button
 
+html
+    background-color: #f4f4f6
+body
+    margin: 0px 0px 0px 0px
 
 
 .toxin
@@ -27,7 +31,10 @@
     margin: 150px 0px 130px 0px
     &-row
         background: #fff
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
         &-one 
+            @extend .grid-row
+
         
 nav
     height: 70px

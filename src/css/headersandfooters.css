@@ -162,6 +162,12 @@
   background: #fff;
   padding: 3px 2px 2px 5px; }
 
+html {
+  background-color: #f4f4f6; }
+
+body {
+  margin: 0px 0px 0px 0px; }
+
 .toxin {
   position: relative;
   left: 52.5px;
@@ -178,8 +184,9 @@
   grid-template-rows: repeat(4, 70px 70px 442px 367px);
   grid-row-gap: 40px;
   margin: 150px 0px 130px 0px; }
-  .grid-row {
-    background: #fff; }
+  .grid-row, .grid-row-one {
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
 
 nav {
   height: 70px;
