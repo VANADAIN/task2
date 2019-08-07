@@ -1,6 +1,7 @@
 
 @import modules/fonts/fonts
 @import modules/colors/colors
+@import modules/titles/titles
 @import modules/logo/logo
 @import modules/logo/coloredlogo
 @import modules/navlist/navlist
@@ -29,20 +30,62 @@ body
     grid-template-rows: repeat(4, 70px 70px 442px 367px)
     grid-row-gap: 40px
     margin: 150px 0px 130px 0px
-    &-row
+    &-element
         background: #fff
         box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
-        &-one 
-            @extend .grid-row
-
         
-nav
+.navbar
+    @extend .grid-element
     height: 70px
     display: grid
     grid-template-columns: repeat(2, 543px auto auto)
+    &-loggedin
+        @extend .navbar
+
+.footer
+    @extend .grid-element
+    display: grid
+    grid-template-rows: 372px 70px  
+    height: 442px
+    &-columns
+        display: grid
+        grid-template-columns: 440px 81px 201px 231px 487px
+        box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1)
+    &-widget
+        display: flex
+        flex-direction: column
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        &-one 
+            @extend .footer-widget
+            padding: 100px 40px 116px 140px
+            line-height: 24px
+            color: $dark75
+        &-two 
+            @extend .footer-widget
+            padding: 104px 0px 100px 0px
+    &-list
+        display: flex
+        flex-direction: column
+        margin-top: 20px
+        list-style-type: none
+        padding-left: 0px
+        margin: 0px
+        &-item
+            outline: none
+            line-height: 17px
+            margin-top: 20px
+            color: $dark50
+
+            
+
+    &-copyright
+        0px 10px 20px rgba(31, 32, 65, 0.05)
+        
 
 .buttons
-
     display: flex
     align-items: center
 

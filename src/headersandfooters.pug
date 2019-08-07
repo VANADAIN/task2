@@ -12,28 +12,45 @@ block content
     include modules/buttons/button
     
     div.grid
-        
-        div.grid-row-one
-            nav
-                .logo-complete
-                    include modules/logo/coloredlogo
-                    include modules/logo/toxin
-                include modules/navlist/navlist
-                +navlist("one")
-                .buttons
-                    +button("button-login", "login")
-                    +button("button-register", "register")
+        nav.navbar
+            .logo-complete
+                include modules/logo/coloredlogo
+                include modules/logo/toxin
+            include modules/navlist/navlist
+            +navlist("one")
+            .buttons
+                +button("button-login", "login")
+                +button("button-register", "register")
 
-
-
-        div.grid-row-one
-            nav
-                .logo-complete
-                    include modules/logo/coloredlogo
-                    include modules/logo/toxin
-                include modules/navlist/navlist_2
-                +navlist2("two")
+        nav.navbar-loggedin
+            .logo-complete
+                include modules/logo/coloredlogo
+                include modules/logo/toxin
+            include modules/navlist/navlist_2
+            +navlist2("two")
                 
+        .footer
+            .footer-columns
+                .footer-widget-one
+                    include modules/logo/coloredlogo
+                    include modules/logo/toxin
+                    p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis. 
+                .footer-widget-two
+                    h3.title-small navigation
+                    ul.footer-list
+                        li.footer-list-item(href="#")
+                            a About us
+                        li.footer-list-item(href="#") 
+                            a News
+                        li.footer-list-item(href="#") 
+                            a Support
+                        li.footer-list-item(href="#") 
+                            a Products
+
+                .footer-widget-three
+                .footer-widget-four
+                .footer-widget-five
+            .footer-copyright
 
         div.grid-row-two
             
