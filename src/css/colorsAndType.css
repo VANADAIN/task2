@@ -23,10 +23,13 @@
 @media screen and (min-width: 1400px) {
   .grid {
     display: grid;
-    grid-template-columns: 270px 407px;
+    grid-template-columns: 270px 403px;
     margin: 145px 141px 0px 150px; }
+  body {
+    margin: 0px; }
   .grid-column-two {
-    margin-left: 435px; } }
+    margin-left: 435px;
+    width: 403px; } }
 
 @media screen and (max-width: 1399px) and (min-width: 1108px) {
   .grid {
@@ -59,7 +62,7 @@
 .color {
   display: grid;
   grid-template-columns: 70px 200px;
-  width: 170px;
+  width: 270px;
   height: 70px;
   margin-bottom: 20px; }
   .color-sample-one {
@@ -97,36 +100,33 @@
     width: 70px;
     height: 70px;
     border-radius: 6px; }
-  .color-desc-one {
+  .color-desc {
     color: #1F2041;
-    padding-top: 15px;
-    margin-left: 40px; }
-  .color-desc-two {
-    color: #1F2041;
-    padding-top: 15px;
-    margin-left: 40px; }
-  .color-desc-three {
-    color: #1F2041;
-    padding-top: 15px;
-    margin-left: 40px; }
-  .color-desc-four {
-    color: #1F2041;
-    padding-top: 15px;
-    margin-left: 40px; }
-  .color-desc-five {
-    color: #1F2041;
-    padding-top: 15px;
-    margin-left: 40px; }
-  .color-desc-six {
-    color: #1F2041;
-    padding-top: 15px;
+    padding-top: 7px;
     margin-left: 40px;
-    width: 80px; }
-  .color-desc-seven {
-    color: #1F2041;
-    padding-top: 15px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px; }
+    .color-desc-small {
+      color: #1F2041;
+      padding-top: 7px;
+      margin-left: 40px;
+      font-family: Quicksand;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 29px;
+      width: 80px; }
+  .color-number {
+    width: 50px;
     margin-left: 40px;
-    width: 80px; }
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 29px; }
 
 .type {
   margin-bottom: 50px;

@@ -12,16 +12,21 @@
 
 @mixin color-desc()
     color: $dark100
-    padding-top: 15px
+    padding-top: 7px
     margin-left: 40px
+    font-family: Quicksand
+    font-style: normal
+    font-weight: bold
+    font-size: 19px
+    line-height: 29px
 
 .color
     display: grid
     grid-template-columns: 70px 200px
-    width: 170px
+    width: 270px
     height: 70px
     margin-bottom: 20px
-
+    
     &-sample
         &-one
             @include color($dark100)
@@ -38,23 +43,19 @@
         &-seven
             @include color($green)
     &-desc
-        &-one
-            @include color-desc()
-        &-two
-            @include color-desc()
-        &-three 
-            @include color-desc()
-        &-four
-            @include color-desc()
-        &-five
-            @include color-desc()
-        &-six
+        @include color-desc()
+        &-small
             @include color-desc()
             width: 80px
-        &-seven
-            @include color-desc()
-            width: 80px
-
+    &-number
+        width: 50px
+        margin-left: 40px
+        font-family: Quicksand
+        font-style: normal
+        font-weight: normal
+        font-size: 19px
+        line-height: 29px
+            
 @mixin type($value, $secvalue)
     font-family: Montserrat
     font-style: normal

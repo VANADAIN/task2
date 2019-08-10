@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel src/headersandfooters.html",
     "build-css": "node-sass src/sass -o src/css/ --include-path src/",
-    "prod": "parcel build src/index.html"
+    "prod": "parcel build src/index.html --out-file index.html"
   },
   "keywords": [],
   "author": "",

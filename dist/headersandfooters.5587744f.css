@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:400,700&display=swap");
 @font-face {
   font-family: "Montserrat";
   src: url("/Montserrat-Regular.cf850ec2.ttf"); }
@@ -5,6 +6,45 @@
 @font-face {
   font-family: "Quicksand";
   src: url("/Quicksand-Regular.d8630157.ttf"); }
+
+.titles {
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+  height: 12px;
+  margin-bottom: 0px;
+  margin-top: 20px; }
+
+.title {
+  font-style: normal;
+  font-weight: bold 700;
+  color: #1F2041; }
+  .title-one {
+    height: 12px; }
+  .title-two {
+    height: 12px; }
+  .title-big {
+    font-family: Quicksand, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0px; }
+  .title-small {
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px; }
+  .title-faded {
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: normal;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    margin: 0px;
+    padding: 0px; }
 
 .logo-part-one {
   position: absolute;
@@ -44,7 +84,7 @@
     width: 9.12px;
     height: 8.91px;
     left: 21.47px;
-    bottom: 4px;
+    bottom: 5px;
     margin-right: 0px; }
   .logo-colored-part-three {
     position: relative;
@@ -53,12 +93,6 @@
     height: 40px;
     left: 0px;
     bottom: 20.5px; }
-
-.navlist-box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 0px; }
 
 .navlist {
   display: flex;
@@ -91,7 +125,8 @@
   width: 80px; }
 
 #two {
-  padding-left: 52px; }
+  padding-left: 52px;
+  width: 778px; }
 
 #one {
   width: 575px; }
@@ -112,7 +147,7 @@
     right: 76px;
     margin: none;
     padding: none;
-    background: #fff;
+    background: rgba(31, 32, 65, 0.25);
     width: 74px;
     padding: 0px;
     margin: 0px; }
@@ -126,8 +161,8 @@
       font-weight: normal;
       font-size: 14px;
       line-height: 17px;
-      color: rgba(31, 32, 65, 0.5);
-      padding: 4px 0px 4px 8px;
+      color: #fff;
+      padding: 4px 0px 4px 4px;
       border-bottom: 1px solid rgba(31, 32, 65, 0.05); }
       .services-dropdown-content-items:hover {
         background-color: rgba(31, 32, 65, 0.25);
@@ -161,6 +196,12 @@
   background: #fff;
   padding: 3px 2px 2px 5px; }
 
+html {
+  background-color: #f4f4f6; }
+
+body {
+  margin: 0px 0px 0px 0px; }
+
 .toxin {
   position: relative;
   left: 52.5px;
@@ -177,13 +218,48 @@
   grid-template-rows: repeat(4, 70px 70px 442px 367px);
   grid-row-gap: 40px;
   margin: 150px 0px 130px 0px; }
-  .grid-row {
-    background: #fff; }
+  .grid-element, .navbar, .navbar-loggedin, .footer {
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
 
-nav {
+.navbar, .navbar-loggedin {
   height: 70px;
   display: grid;
   grid-template-columns: repeat(2, 543px auto auto); }
+
+.footer {
+  display: grid;
+  grid-template-rows: 372px 70px;
+  height: 442px; }
+  .footer-columns {
+    display: grid;
+    grid-template-columns: 440px 81px 201px 231px 487px;
+    box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1); }
+  .footer-widget, .footer-widget-one, .footer-widget-two {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px; }
+    .footer-widget-one {
+      padding: 100px 40px 116px 140px;
+      line-height: 24px;
+      color: rgba(31, 32, 65, 0.75); }
+    .footer-widget-two {
+      padding: 104px 0px 100px 0px; }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px; }
+    .footer-list-item {
+      outline: none;
+      line-height: 17px;
+      margin-top: 20px;
+      color: rgba(31, 32, 65, 0.5); }
 
 .buttons {
   display: flex;
