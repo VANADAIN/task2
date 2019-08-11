@@ -73,26 +73,46 @@ body
         &-four
             @extend .footer-widget
             padding: 104px 0px 0px 119px
+        &-five
+            @extend .footer-widget
+            padding: 104px 0px 0px 87px
+            p
+                width: 196px
+                line-height: 24px
+                color: $dark75
             
-
     &-list
         display: flex
         flex-direction: column
         margin-top: 20px
         list-style-type: none
         padding-left: 0px
-        margin: 0px
+        li
+            margin-top: 20px
         &-item
             outline: none
+            text-decoration: none
             line-height: 17px
-            margin-top: 20px
             color: $dark50
 
-            
-
     &-copyright
-        0px 10px 20px rgba(31, 32, 65, 0.05)
-        
+        display: flex
+        flex-direction: row
+        p
+            line-height: 17px
+            color: $dark75
+            margin: 26px 0px 0px 140px
+    &-social
+        width: 112px
+        li
+            margin-right: 20px
+        &-list
+            display: flex
+            flex-direction: row
+            list-style-type: none
+            padding-left: 0px
+
+
 
 .buttons
     display: flex
