@@ -12,12 +12,10 @@ html
 body
     margin: 0px 0px 0px 0px
 
-
 .toxin
     position: relative
     left: 52.5px
     bottom: 28.72px
-
 
 .logo-complete
     width: 106px
@@ -111,13 +109,38 @@ body
             flex-direction: row
             list-style-type: none
             padding-left: 0px
+    &-creative
+        @extend .grid-element
+        height: 367px
+        &-content
+            width: 560px
+            height: 157px
+            display: flex
+            flex-direction: column
+            align-items: stretch
+            justify-content: center
+            margin: 100px 440px 110px 440px
+            p 
+                display: flex
+                text-align: center
+                font-family: Montserrat
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 24px
+                color: $dark75
+        &-logo
+            padding-left: 227px
+            width: 110px
 
-
+#creative-social
+    padding-left: 224px
+#copyright-social
+    margin-left: 716px
 
 .buttons
     display: flex
     align-items: center
-
 
 .button
     &-login
