@@ -71,7 +71,7 @@
     font-weight: $value
     color: $secvalue
     font-size: $thvalue
-    line-height: $thvalue
+    line-height: $frvalue
     padding-left: 30px
     @media screen and (max-width: 576px)
         padding-left: 10px
@@ -79,13 +79,13 @@
     @media screen and (max-width: 408px)
         width: 220px
     
-
+#three
+    margin-bottom: 48px
 
 .type
     margin-bottom: 50px
     display: grid
     grid-template-columns: 35px 470px
-    
     &-tag
         &-one 
             @include type(24px, 29px)
@@ -93,21 +93,27 @@
             @include type(19px, 23px)
         &-three
             @include type(12px, 15px)
-
         &-four
             @include type(14px, 24px)
     &-desc
         @media screen and (max-width: 576px)
             padding-left: 5px
-            
         &-one
             @include type-desc(bold, $dark100, 24px, 30px)
+            width: 336px
         &-two
             @include type-desc(bold, $dark100, 19px, 24px)
+            width: 282px
+
         &-three
             @include type-desc(bold, $dark100, 12px, 15px)
             text-transform: uppercase
+            width: 186px
+            font-family: Montserrat
         &-four
             @include type-desc(normal, $dark75, 14px, 24px)
-
+            width: 301px
+            font-family: Montserrat
+            
+            
         

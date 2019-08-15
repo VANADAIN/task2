@@ -28,7 +28,9 @@
   body {
     margin: 0px; }
   .grid-column-two {
-    margin-left: 435px;
+    margin-left: 428px;
+    width: 403px; }
+  .div-type {
     width: 403px; } }
 
 @media screen and (max-width: 1399px) and (min-width: 1108px) {
@@ -128,6 +130,9 @@
     font-size: 19px;
     line-height: 29px; }
 
+#three {
+  margin-bottom: 48px; }
+
 .type {
   margin-bottom: 50px;
   display: grid;
@@ -173,8 +178,9 @@
     font-weight: bold;
     color: #1F2041;
     font-size: 24px;
-    line-height: 24px;
-    padding-left: 30px; }
+    line-height: 30px;
+    padding-left: 30px;
+    width: 336px; }
     @media screen and (max-width: 576px) {
       .type-desc-one {
         padding-left: 10px;
@@ -188,8 +194,9 @@
     font-weight: bold;
     color: #1F2041;
     font-size: 19px;
-    line-height: 19px;
-    padding-left: 30px; }
+    line-height: 24px;
+    padding-left: 30px;
+    width: 282px; }
     @media screen and (max-width: 576px) {
       .type-desc-two {
         padding-left: 10px;
@@ -203,9 +210,11 @@
     font-weight: bold;
     color: #1F2041;
     font-size: 12px;
-    line-height: 12px;
+    line-height: 15px;
     padding-left: 30px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 186px;
+    font-family: Montserrat; }
     @media screen and (max-width: 576px) {
       .type-desc-three {
         padding-left: 10px;
@@ -219,8 +228,10 @@
     font-weight: normal;
     color: rgba(31, 32, 65, 0.75);
     font-size: 14px;
-    line-height: 14px;
-    padding-left: 30px; }
+    line-height: 24px;
+    padding-left: 30px;
+    width: 301px;
+    font-family: Montserrat; }
     @media screen and (max-width: 576px) {
       .type-desc-four {
         padding-left: 10px;
