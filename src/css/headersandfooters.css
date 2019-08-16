@@ -104,15 +104,17 @@
   margin: 0px; }
   .navlist-item {
     margin-right: 30px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 14px;
     line-height: 17px; }
     .navlist-item-text {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
       outline: none;
       text-decoration: none;
       color: rgba(31, 32, 65, 0.5); }
@@ -246,6 +248,8 @@ body {
       padding: 100px 40px 0px 140px;
       line-height: 24px;
       color: rgba(31, 32, 65, 0.75); }
+      .footer-widget-one p {
+        margin: 0px; }
     .footer-widget-two {
       padding: 104px 0px 100px 0px; }
     .footer-widget-three {
@@ -258,11 +262,12 @@ body {
       .footer-widget-five p {
         width: 196px;
         line-height: 24px;
+        margin: 18px 0px 0px 0px;
         color: rgba(31, 32, 65, 0.75); }
   .footer-list {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 0px;
     list-style-type: none;
     padding-left: 0px; }
     .footer-list li {
@@ -277,6 +282,10 @@ body {
     flex-direction: row; }
     .footer-copyright p {
       line-height: 17px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
       color: rgba(31, 32, 65, 0.75);
       margin: 26px 0px 0px 140px; }
   .footer-social {
@@ -286,6 +295,7 @@ body {
     .footer-social-list {
       display: flex;
       flex-direction: row;
+      align-items: flex-end;
       list-style-type: none;
       padding-left: 0px; }
   .footer-creative {
@@ -308,14 +318,18 @@ body {
         line-height: 24px;
         color: rgba(31, 32, 65, 0.75); }
     .footer-creative-logo {
+      padding-top: 8px;
       padding-left: 227px;
       width: 110px; }
 
 #creative-social {
-  padding-left: 224px; }
+  padding-left: 225px; }
 
 #copyright-social {
   margin-left: 716px; }
+
+#footer-paragraph {
+  margin: 0px; }
 
 .buttons {
   display: flex;
